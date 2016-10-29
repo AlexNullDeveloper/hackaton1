@@ -13,7 +13,7 @@ public class JdbcHelper {
         Connection connection = null;
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            connection = DriverManager.getConnection(dbURL, "A_TALISMANOV", "Qq222222");
+            connection = DriverManager.getConnection(dbURL, "HACKATON", "HACKATON");
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
@@ -24,7 +24,7 @@ public class JdbcHelper {
 
     public static void main(String[] args) throws SQLException {
         Connection connection = JdbcHelper.getConnection();
-        PreparedStatement preparedStatement = connection.prepareStatement("SELECT 1 FROM DUAL");
+        PreparedStatement preparedStatement = connection.prepareStatement("SELECT USER FROM DUAL");
         ResultSet resultSet = preparedStatement.executeQuery();
         if (resultSet.next()) {
             System.out.println("resultset result " + resultSet.getString(1));
