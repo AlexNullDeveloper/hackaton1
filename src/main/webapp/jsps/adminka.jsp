@@ -54,7 +54,7 @@
         <div class="col-xs-6">
             <h2 style="margin-bottom: 20px;">Не авторизованные</h2>
             <div class="list-group">
-                <form action="/teacherAgree" method="post" id="example_group2">
+                <form action="/teacherAgree" method="get" id="example_group2" autocomplete="on">
                 <% for (Teacher teacher : (List<Teacher>) new TeachersService().getListOfNotAgreedTeachers()) {%>
                 <button class="list-group-item">
                     <input type="checkbox" name="checkboxes" value="1"> <%=teacher.getFamilyName() + " " + teacher.getFirstName()
