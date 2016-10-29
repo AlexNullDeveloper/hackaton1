@@ -7,5 +7,5 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="html/header.html" %>
-<%@include file="html/theacher.html" %>
-<%@include file="html/footer.html" %>
+<%@include file="html/teacher.html" %>
+<%@include file="../../../../testWeb/web/html/footer.html" %>
