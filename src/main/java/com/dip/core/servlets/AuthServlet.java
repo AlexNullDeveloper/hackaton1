@@ -34,9 +34,8 @@ public class AuthServlet extends HttpServlet {
                 resp.sendRedirect("jsps/teacher.jsp");
             }
         } else {
-            //req.setAttribute("wrongPassword","");
+            req.setAttribute("wrongPassword","yes");
             resp.sendRedirect("index.jsp");
         }
     }
-
 }
