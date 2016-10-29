@@ -4169,8 +4169,8 @@ p.change_link{
     position: absolute;
     color: rgb(127, 124, 124);
     left: 0px;
-    height: 20px;
-    width: 440px;
+    height: 59px;
+    width: 100%;
     padding: 17px 30px 20px 30px;
     font-size: 16px	;
     text-align: right;
@@ -4489,4 +4489,3 @@ a{
     background: rgba(255,255,255,0.9);
     box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
 }
-
