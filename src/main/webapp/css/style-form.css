@@ -4032,9 +4032,7 @@ a.hiddenanchor{
 #wrapper p{
     margin-bottom:15px;
 }
-#wrapper p:first-child{
-    margin: 0px;
-}
+
 #wrapper label{
     color: rgb(64, 92, 96);
     position: relative;
@@ -4057,7 +4055,7 @@ input {
 
 /* all the input except submit and checkbox */
 #wrapper input:not([type="checkbox"]){
-    width: 92%;
+    width: 95%;
     margin-top: 4px;
     padding: 10px;
     border: 1px solid rgb(178, 178, 178);
@@ -4097,29 +4095,28 @@ input {
 }
 
 /*styling both submit buttons */
-#wrapper p.button input{
-    width: 30%;
+#wrapper p.button input {
+    width: 25%;
+    text-transform: lowercase;
     cursor: pointer;
     background: rgb(61, 157, 179);
-    padding: 8px 5px;
+    padding: 1px;
     font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
     color: #fff;
-    font-size: 24px;
-    border: 1px solid rgb(28, 108, 122);
+    font-size: 19px;
+    border: 1px solid rgb(185, 192, 193);
     margin-bottom: 10px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
     0px 0px 0px 3px rgb(254, 254, 254),
     0px 5px 3px 3px rgb(210, 210, 210);
-    -moz-box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+    -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
     0px 0px 0px 3px rgb(254, 254, 254),
     0px 5px 3px 3px rgb(210, 210, 210);
-    box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
-    0px 0px 0px 3px rgb(254, 254, 254),
-    0px 5px 3px 3px rgb(210, 210, 210);
+    box-shadow: 0px 1px 6px 4px rgba(255,255,255,0.15) inset;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -4165,48 +4162,19 @@ p.signin.button{
 
 /*styling the links to change from one form to another */
 
-p.change_link{
+p.change_link {
     position: absolute;
     color: rgb(127, 124, 124);
     left: 0px;
     height: 60px;
     width: 100%;
     padding: 17px 30px 20px 30px;
-    font-size: 16px	;
+    font-size: 16px;
     text-align: right;
     border-top: 1px solid rgb(219, 229, 232);
-    -webkit-border-radius: 0 0  5px 5px;
-    -moz-border-radius: 0 0  5px 5px;
-    border-radius: 0 0  5px 5px;
-    background: rgb(225, 234, 235);
-    background: -moz-repeating-linear-gradient(-45deg,
-    rgb(247, 247, 247) ,
-    rgb(247, 247, 247) 15px,
-    rgb(225, 234, 235) 15px,
-    rgb(225, 234, 235) 30px,
-    rgb(247, 247, 247) 30px
-    );
-    background: -webkit-repeating-linear-gradient(-45deg,
-    rgb(247, 247, 247) ,
-    rgb(247, 247, 247) 15px,
-    rgb(225, 234, 235) 15px,
-    rgb(225, 234, 235) 30px,
-    rgb(247, 247, 247) 30px
-    );
-    background: -o-repeating-linear-gradient(-45deg,
-    rgb(247, 247, 247) ,
-    rgb(247, 247, 247) 15px,
-    rgb(225, 234, 235) 15px,
-    rgb(225, 234, 235) 30px,
-    rgb(247, 247, 247) 30px
-    );
-    background: repeating-linear-gradient(-45deg,
-    rgb(247, 247, 247) ,
-    rgb(247, 247, 247) 15px,
-    rgb(225, 234, 235) 15px,
-    rgb(225, 234, 235) 30px,
-    rgb(247, 247, 247) 30px
-    );
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
 }
 #wrapper p.change_link a {
     display: inline-block;
@@ -4489,4 +4457,11 @@ a{
 html {
     background: url("../img/bg.jpg") center;
     background-size: 200%;
+}
+
+.text-form {
+    text-align: center;
+    color: rgb(127, 124, 124);
+    font-size: 16px;
+    margin: 10px;
 }
