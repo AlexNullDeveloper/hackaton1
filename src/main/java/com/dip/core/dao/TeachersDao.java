@@ -11,8 +11,8 @@ import java.sql.SQLException;
  * Created by Юрий on 30.10.2016.
  */
 public class TeachersDao {
-    private static final String TEACHERS_AGREED_SQL = "SELECT F_NAME, I_NAME, O_NAME, PHONE FROM TEACHERS WHERE IS_AGREED = 0";
-    private static final String TEACHERS_NOT_AGREED_SQL = "SELECT F_NAME, I_NAME, O_NAME, PHONE FROM TEACHERS WHERE IS_AGREED = 1";
+    private static final String TEACHERS_AGREED_SQL = "SELECT F_NAME, I_NAME, O_NAME, PHONE FROM TEACHERS WHERE IS_AGREED = 1";
+    private static final String TEACHERS_NOT_AGREED_SQL = "SELECT F_NAME, I_NAME, O_NAME, PHONE FROM TEACHERS WHERE IS_AGREED = 0";
     private static final String UPDATE_TEACHERS_AGREED_SQL = "UPDATE TEACHERS SET IS_AGREED = 1 WHERE PHONE = ?";
 
 
@@ -45,9 +45,19 @@ public class TeachersDao {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_TEACHERS_AGREED_SQL);
             preparedStatement.setString(1, phone);
-            preparedStatement.execute();
+            int countRows = preparedStatement.executeUpdate();
+            System.out.println("countRows" + countRows);
+            connection.commit();
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+
+                }
+            }
         }
 
     }

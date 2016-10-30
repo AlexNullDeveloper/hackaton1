@@ -13,8 +13,8 @@ import java.util.List;
  */
 public class TeachersService {
 
-    public void setTeacherAgreed() {
-        new TeachersDao().updateTeacherAgreedStatus("zaglushka");
+    public void setTeacherAgreed(String phone) {
+        new TeachersDao().updateTeacherAgreedStatus(phone);
     }
 
     public List getListOfAgreedTeachers() {
