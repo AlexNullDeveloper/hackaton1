@@ -1086,7 +1086,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  //background-color: #fff;
 }
 input,
 button,
@@ -1409,7 +1409,7 @@ a.bg-danger:focus {
 }
 .page-header {
   padding-bottom: 9px;
-  margin:20px;
+  margin: 30px;
 }
 ul,
 ol {

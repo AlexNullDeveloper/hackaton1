@@ -4059,7 +4059,7 @@ input {
 #wrapper input:not([type="checkbox"]){
     width: 92%;
     margin-top: 4px;
-    padding: 10px 5px 10px 32px;
+    padding: 10px;
     border: 1px solid rgb(178, 178, 178);
     -webkit-appearance: textfield;
     -webkit-box-sizing: content-box;
@@ -4169,7 +4169,7 @@ p.change_link{
     position: absolute;
     color: rgb(127, 124, 124);
     left: 0px;
-    height: 59px;
+    height: 60px;
     width: 100%;
     padding: 17px 30px 20px 30px;
     font-size: 16px	;
@@ -4237,17 +4237,15 @@ p.change_link{
 }
 /** Styling both forms **/
 #register,
-#login{
+#login {
     position: absolute;
     top: 0px;
     width: 100%;
     padding: 18px 6% 60px 6%;
-    margin: 0 0 35px 0;
     background: rgb(247, 247, 247);
-    border: 1px solid rgba(147, 184, 189,0.8);
-    -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
-    -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
-    box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+    border: 1px solid rgba(147,184,189,0.30);
+    -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+    box-shadow: 0 0 50px rgba(62,86,95,0.05);
     -webkit-box-shadow: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -4380,7 +4378,6 @@ footer, header, hgroup, menu, nav, section {
 /* General Demo Style */
 body{
     font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-    background: #fff url(../images/bg.jpg) repeat top left;
     font-weight: 400;
     font-size: 15px;
     color: #1d3c41;
@@ -4489,3 +4486,8 @@ a{
     background: rgba(255,255,255,0.9);
     box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
 }
+html {
+    background: url(http://www.intrawallpaper.com/static/images/Alien_Ink_2560X1600_Abstract_Background_AgLbDjN.jpg) center;
+    background-size: 200%;
+}
+/*-----------*/
