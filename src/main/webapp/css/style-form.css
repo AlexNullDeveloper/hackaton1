@@ -4056,26 +4056,6 @@ input {
 }
 
 /* all the input except submit and checkbox */
-#wrapper input:not([type="checkbox"]){
-    width: 92%;
-    margin-top: 4px;
-    padding: 10px;
-    border: 1px solid rgb(178, 178, 178);
-    -webkit-appearance: textfield;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing : content-box;
-    box-sizing : content-box;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-}
 #wrapper input:not([type="checkbox"]):active,
 #wrapper input:not([type="checkbox"]):focus{
     border: 1px solid rgba(91, 90, 90, 0.7);
@@ -4097,10 +4077,10 @@ input {
 }
 
 /*styling both submit buttons */
-#wrapper p.button input{
+#wrapper p.button input {
     width: 30%;
     cursor: pointer;
-    background: rgb(61, 157, 179);
+    background: rgb(64, 111, 118);
     padding: 8px 5px;
     font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
     color: #fff;
@@ -4114,12 +4094,10 @@ input {
     -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
     0px 0px 0px 3px rgb(254, 254, 254),
     0px 5px 3px 3px rgb(210, 210, 210);
-    -moz-box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+    -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
     0px 0px 0px 3px rgb(254, 254, 254),
     0px 5px 3px 3px rgb(210, 210, 210);
-    box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
-    0px 0px 0px 3px rgb(254, 254, 254),
-    0px 5px 3px 3px rgb(210, 210, 210);
+    box-shadow: 0px 1px 6px 4px rgba(255, 255, 255, 0.23) inset, 0px 0px 0px 3px rgb(254, 254, 254), 5px 5px 10px 3px rgba(226, 225, 225, 0.47);
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -4487,7 +4465,7 @@ a{
     box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
 }
 html {
-    background: url(http://www.intrawallpaper.com/static/images/Alien_Ink_2560X1600_Abstract_Background_AgLbDjN.jpg) center;
+    background: url("../img/bg.jpg") center;
     background-size: 200%;
 }
 /*-----------*/
