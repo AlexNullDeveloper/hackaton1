@@ -37,9 +37,10 @@
 
 .page-header h1 {
     color: rgb(6, 106, 117);
-    padding: 2px 0 10px 0;
+    padding: 0;
     font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
     font-weight: bold;
     text-align: center;
+    margin: 0;
     padding-bottom: 30px;
 }
