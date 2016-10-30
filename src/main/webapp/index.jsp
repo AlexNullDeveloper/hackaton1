@@ -28,7 +28,7 @@
             <div id="wrapper">
                 <div id="login" class="animate form">
                     <form  action="/auth" method="post" autocomplete="on">
-                        <h1>Войти</h1>
+                        <p class="text-form">Авторизоваться на сайте</p>
                         <p>
                             <input id="username" name="username" required="required" type="text" placeholder="Ваш email или логин"/>
                         </p>
@@ -50,7 +50,7 @@
                 </div>
                 <div id="register" class="animate form">
                     <form  action="/auth" method="post" autocomplete="on">
-                        <h1> Регистрация </h1>
+                        <p class="text-form">Зарегистрироваться на сайте</p>
                         <p>
                             <input class="fa fa-address-book" id="surnamesignup" name="surnamesignup" required="required" type="text" placeholder="Фамилия"/>
                         </p>
