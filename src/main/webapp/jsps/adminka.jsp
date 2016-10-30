@@ -63,8 +63,9 @@
                         <%--<button class="list-group-item">--%>
                         <%--<input type="checkbox"> Check me out--%>
                         <%--</button>--%>
-                            <% }%>
                     </div>
+                    <% }%>
+
                         <button type="submit" class="btn btn-primary">Авторизовать</button>
                         <button type="button" class="btn btn-danger">Отклонить</button>
                 </form>
