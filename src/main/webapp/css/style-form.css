@@ -4098,9 +4098,8 @@ input {
 #wrapper p.button input {
     width: 25%;
     cursor: pointer;
-    background: rgb(61, 157, 179);
+    background: rgb(17, 102, 175);
     padding: 1px;
-    text-transform: uppercase;
     font-weight: bold;
     font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
     color: #fff;
