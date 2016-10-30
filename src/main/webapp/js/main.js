@@ -5,7 +5,7 @@ $(document).ready(function () {
         alert (name);
 
         $.ajax({
-            url: "/submit?name = " + name
+            url: "/submit?name=" + name
         }).success(function(result) {
             console.log(result)
             // $( this ).addClass( "done" );
@@ -19,7 +19,7 @@ $(document).ready(function () {
         alert (name_group);
 
         $.ajax({
-            url: "/submit?name_group = " + name_group
+            url: "/submit?name_group=" + name_group
         }).success(function(result) {
             console.log(result)
             // $( this ).addClass( "done" );
