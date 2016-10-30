@@ -17,8 +17,8 @@ public class TeachersService {
         new TeachersDao().updateTeacherAgreedStatus(phone);
     }
 
-    public List getListOfAgreedTeachers() {
-        List teachers = new ArrayList();
+    public List<Teacher> getListOfAgreedTeachers() {
+        List<Teacher> teachers = new ArrayList<>();
         ResultSet agreedTeachers = new TeachersDao().getAgreedTeachers();
         try {
             while (agreedTeachers.next()) {
@@ -30,8 +30,8 @@ public class TeachersService {
         return teachers;
     }
 
-    public List getListOfNotAgreedTeachers() {
-        List teachers = new ArrayList();
+    public List<Teacher> getListOfNotAgreedTeachers() {
+        List<Teacher> teachers = new ArrayList<>();
         ResultSet notAgreedTeachers = new TeachersDao().getNotAgreedTeachers();
         try {
             while (notAgreedTeachers.next()) {
@@ -43,7 +43,7 @@ public class TeachersService {
         return teachers;
     }
 
-    private void addTeacherInList(List teachers, ResultSet agreedTeachers) throws SQLException {
+    private void addTeacherInList(List<Teacher> teachers, ResultSet agreedTeachers) throws SQLException {
         String familyName = agreedTeachers.getString("F_NAME");
         String firstName = agreedTeachers.getString("I_NAME");
         String secondName = agreedTeachers.getString("O_NAME");
