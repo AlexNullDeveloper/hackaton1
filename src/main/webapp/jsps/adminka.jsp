@@ -42,30 +42,34 @@
         <div class="col-xs-6">
             <h2 style="margin-bottom: 20px;">Не авторизованные</h2>
             <div class="list-group">
-                <form action="/teacherAgree" method="get" id="example_group2" autocomplete="on">
-                <% for (Teacher teacher : (List<Teacher>) new TeachersService().getListOfNotAgreedTeachers()) {%>
-                    <input id="username" name="username" required="required" type="checkbox" value="<%=teacher.getFamilyName() + " " + teacher.getFirstName()
-                        + " " + teacher.getSecondName() + " " + teacher.getPhone()%>" placeholder="<%=teacher.getFamilyName() + " " + teacher.getFirstName()
-                        + " " + teacher.getSecondName() + " " + teacher.getPhone()%>"/>
-                    <input type="text" value="">
+                <form action="/teacherAgree" method="post" id="example_group2">
+                    <% for (Teacher teacher : (List<Teacher>) new TeachersService().getListOfNotAgreedTeachers()) {%>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="teacher_params" value="<%=teacher.getFamilyName() + " " + teacher.getFirstName()
+                        + " " + teacher.getSecondName() + " " + teacher.getPhone()%>">
+                            <%=teacher.getFamilyName() + " " + teacher.getFirstName()
+                                    + " " + teacher.getSecondName() + " " + teacher.getPhone()%>
+                        </label>
 
-                    <%--<input type="checkbox" name="checkboxes" value="1"> --%>
+                        <%--<input type="checkbox" name="checkboxes" value="1"> --%>
 
-                <%--<button class="list-group-item">--%>
-                    <%--<input type="checkbox"> Check me out--%>
-                <%--</button>--%>
-                <%--<button class="list-group-item">--%>
-                    <%--<input type="checkbox"> Check me out--%>
-                <%--</button>--%>
-                <%--<button class="list-group-item">--%>
-                    <%--<input type="checkbox"> Check me out--%>
-                <%--</button>--%>
-                <% }%>
+                        <%--<button class="list-group-item">--%>
+                        <%--<input type="checkbox"> Check me out--%>
+                        <%--</button>--%>
+                        <%--<button class="list-group-item">--%>
+                        <%--<input type="checkbox"> Check me out--%>
+                        <%--</button>--%>
+                        <%--<button class="list-group-item">--%>
+                        <%--<input type="checkbox"> Check me out--%>
+                        <%--</button>--%>
+                            <% }%>
+                        <button type="submit" class="btn btn-primary">Авторизовать</button>
                 </form>
             </div>
 
             <button type="button" class="btn btn-danger">Отклонить</button>
-            <button type="submit" class="btn btn-primary">Авторизовать</button>
+
         </div>
     </div>
 </div>
