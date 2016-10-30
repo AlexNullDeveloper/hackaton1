@@ -8,19 +8,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" session="true" %>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8"/>
-    <title>Admin Page</title>
-    <link rel="icon" href="../favicon.png">
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
-    <script src="../js/jquery-3.1.1.min.js"></script>
-    <script src="js/script.js"></script>
-</head>
-<body>
+<%@include file="../html/header.html"%>
 <%--<%! String[] checkboxes = null;%>
 <% checkboxes = request.getParameterValues("checkboxes");
     if (checkboxes != null) {
@@ -56,10 +44,13 @@
             <div class="list-group">
                 <form action="/teacherAgree" method="get" id="example_group2" autocomplete="on">
                 <% for (Teacher teacher : (List<Teacher>) new TeachersService().getListOfNotAgreedTeachers()) {%>
-                <button class="list-group-item">
-                    <input type="checkbox" name="checkboxes" value="1"> <%=teacher.getFamilyName() + " " + teacher.getFirstName()
-                        + " " + teacher.getSecondName() + " " + teacher.getPhone()%>
-                </button>
+                    <input id="username" name="username" required="required" type="checkbox" value="<%=teacher.getFamilyName() + " " + teacher.getFirstName()
+                        + " " + teacher.getSecondName() + " " + teacher.getPhone()%>" placeholder="<%=teacher.getFamilyName() + " " + teacher.getFirstName()
+                        + " " + teacher.getSecondName() + " " + teacher.getPhone()%>"/>
+                    <input type="text" value="">
+
+                    <%--<input type="checkbox" name="checkboxes" value="1"> --%>
+
                 <%--<button class="list-group-item">--%>
                     <%--<input type="checkbox"> Check me out--%>
                 <%--</button>--%>
@@ -72,8 +63,7 @@
                 <% }%>
                 </form>
             </div>
-            <input type="button" name="all" id="example_all" rel="example_group2" value="Отметить все чекбоксы" />
-            <input type="button" name="noone" id="example_noone" rel="example_group2" value="Сбросить все" />
+
             <button type="button" class="btn btn-danger">Отклонить</button>
             <button type="submit" class="btn btn-primary">Авторизовать</button>
         </div>
