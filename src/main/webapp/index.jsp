@@ -19,6 +19,9 @@
 
 
 %>
+<div class="page-header" style="text-align: center;">
+    <div class="logo-form"><img src="img/logo.png"></div>
+</div>
 <div class="container">
     <section>
         <div id="container" >
